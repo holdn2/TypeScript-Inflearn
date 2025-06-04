@@ -14,8 +14,8 @@ type Cat = {
 
 type Animal = Dog | Cat;
 
+// 사용자 정의 타입 가드
 // isDog라는 함수의 반환값이 true면 매개변수로 전달한 animal이 Dog 타입이라고 한다.
-// 이것이 사용자 정의 타입 가드
 function isDog(animal: Animal): animal is Dog {
   return (animal as Dog).isBark !== undefined;
 }
