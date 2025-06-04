@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "outDir": "dist",
+    "strict": true,
+    "moduleDetection": "force",
+    // 반드시 아래 옵션을 추가해야지 undici-types 관련 오류가 발생하지 않는다.
+    "skipLibCheck": true
+  },
+  // ts-node가 정상적으로 동작하지 않는 경우 tsx를 사용한다.
+  "ts-node": {
+    "esm": true
+  },
+  "include": ["src"]
+}
