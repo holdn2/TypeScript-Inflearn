@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "outDir": "dist",
+    "strict": true,
+    "moduleDetection": "force",
+    // src 폴더 내에 js 파일도 허용되도록 설정
+    "allowJs": true,
+    "skipLibCheck": true
+    // 아래처럼 암시적으로 추론이 불가능한 변수의 타입들을 any로 추론할 수 있도록 false로 할 수 있다.
+    // "noImplicitAny": false
+  },
+  "include": ["src"]
+}
